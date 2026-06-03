@@ -148,28 +148,29 @@ Changes since `2.1.0-rc1`.
 
 * Added support for more distro logos: FiwixOS ([#356](https://github.com/hykilpikonna/hyfetch/issues/356)), Imaginary Linux ([#390](https://github.com/hykilpikonna/hyfetch/issues/390)), MidOS ([#514](https://github.com/hykilpikonna/hyfetch/pull/514)), OpenSolaris ([#513](https://github.com/hykilpikonna/hyfetch/pull/513)), and Tuxedo OS ([#333](https://github.com/hykilpikonna/hyfetch/issues/333)).
 * Added new pride presets: Enbian ([#333](https://github.com/hykilpikonna/hyfetch/issues/333)), Queer Villain ([#497](https://github.com/hykilpikonna/hyfetch/pull/497)), Demisexual ([#511](https://github.com/hykilpikonna/hyfetch/pull/511)), Paragender, Paraboy, Paragirl, Paranonbinary, and Cupio ([#506](https://github.com/hykilpikonna/hyfetch/pull/506)).
-* Added CPU codenames to processor output ([#381](https://github.com/hykilpikonna/hyfetch/issues/381)).
-* Added `glxinfo` GPU detection for systems where existing GPU detection missed hardware ([#225](https://github.com/hykilpikonna/hyfetch/issues/225)).
-* Added Steam library detection to neofetch output ([#346](https://github.com/hykilpikonna/hyfetch/issues/346)).
-* Added low-color sixel output for terminals that cannot display high-color sixels ([#404](https://github.com/hykilpikonna/hyfetch/issues/404)).
 * Added `palette_glyph` support for the macchina backend ([#501](https://github.com/hykilpikonna/hyfetch/pull/501)).
-* Added musikcube media player support through MPRIS ([#364](https://github.com/hykilpikonna/hyfetch/issues/364), [#512](https://github.com/hykilpikonna/hyfetch/pull/512)).
-* Changed memory output to report used memory instead of unavailable memory ([#117](https://github.com/hykilpikonna/hyfetch/issues/117)).
+* 🖼️ Neofetch - Added CPU codenames to processor output ([#381](https://github.com/hykilpikonna/hyfetch/issues/381)).
+* 🖼️ Neofetch - Added `glxinfo` GPU detection for systems where existing GPU detection missed hardware ([#225](https://github.com/hykilpikonna/hyfetch/issues/225)).
+* 🖼️ Neofetch - Added Steam library detection to output ([#346](https://github.com/hykilpikonna/hyfetch/issues/346)).
+* 🖼️ Neofetch - Added low-color sixel output for terminals that cannot display high-color sixels ([#404](https://github.com/hykilpikonna/hyfetch/issues/404)).
+* 🖼️ Neofetch - Added musikcube media player support through MPRIS ([#364](https://github.com/hykilpikonna/hyfetch/issues/364), [#512](https://github.com/hykilpikonna/hyfetch/pull/512)).
+* 🖼️ Neofetch - Changed memory output to report used memory instead of unavailable memory ([#117](https://github.com/hykilpikonna/hyfetch/issues/117)).
 
 **🐛 Bug Fixes**
 
 * Fixed `neowofetch` packaging so the command is installed and callable ([#499](https://github.com/hykilpikonna/hyfetch/issues/499)).
 * Fixed Windows/MSYS path escaping and neofetch lookup problems, including OpenBSD ASCII backslash handling ([#496](https://github.com/hykilpikonna/hyfetch/issues/496), [#500](https://github.com/hykilpikonna/hyfetch/issues/500)).
-* Fixed custom ASCII loading from files for neofetch ([#505](https://github.com/hykilpikonna/hyfetch/pull/505)).
-* Fixed ASCII whitespace and newline handling regressions from `2.1.0-rc1` ([#327](https://github.com/hykilpikonna/hyfetch/issues/327), [#498](https://github.com/hykilpikonna/hyfetch/issues/498)).
+* Fixed custom ASCII loading from files ([#505](https://github.com/hykilpikonna/hyfetch/pull/505)).
+* Fixed Rust wrapper newline handling regression from `2.1.0-rc1` ([#498](https://github.com/hykilpikonna/hyfetch/issues/498)).
 * Fixed macchina backend pride logo/theme output on macOS ([#503](https://github.com/hykilpikonna/hyfetch/issues/503), [#509](https://github.com/hykilpikonna/hyfetch/pull/509)).
 * Fixed the June easter egg so it exits gracefully ([#508](https://github.com/hykilpikonna/hyfetch/issues/508)).
-* Fixed CPU detection under PRoot-Distro and Android fallback behavior ([#355](https://github.com/hykilpikonna/hyfetch/issues/355), [#120](https://github.com/hykilpikonna/hyfetch/issues/120)).
-* Fixed macOS package/model detection issues, including Homebrew/pkgx/tea package counting ([#40](https://github.com/hykilpikonna/hyfetch/issues/40)).
-* Fixed Intel OEM iGPU names ([#230](https://github.com/hykilpikonna/hyfetch/issues/230)).
-* Fixed duplicate resolution output by skipping inactive DRM connectors ([#319](https://github.com/hykilpikonna/hyfetch/issues/319)).
-* Fixed package counting on openSUSE by removing the incorrect dnf fast path ([#306](https://github.com/hykilpikonna/hyfetch/issues/306)).
-* Fixed Interix hardware detection when `%WINDIR%` is not `C:\Windows` ([#507](https://github.com/hykilpikonna/hyfetch/pull/507)).
+* 🖼️ Neofetch - Fixed ASCII whitespace handling ([#327](https://github.com/hykilpikonna/hyfetch/issues/327)).
+* 🖼️ Neofetch - Fixed CPU detection under PRoot-Distro and Android fallback behavior ([#355](https://github.com/hykilpikonna/hyfetch/issues/355), [#120](https://github.com/hykilpikonna/hyfetch/issues/120)).
+* 🖼️ Neofetch - Fixed macOS package/model detection issues, including Homebrew/pkgx/tea package counting ([#40](https://github.com/hykilpikonna/hyfetch/issues/40)).
+* 🖼️ Neofetch - Fixed Intel OEM iGPU names ([#230](https://github.com/hykilpikonna/hyfetch/issues/230)).
+* 🖼️ Neofetch - Fixed duplicate resolution output by skipping inactive DRM connectors ([#319](https://github.com/hykilpikonna/hyfetch/issues/319)).
+* 🖼️ Neofetch - Fixed package counting on openSUSE by removing the incorrect dnf fast path ([#306](https://github.com/hykilpikonna/hyfetch/issues/306)).
+* 🖼️ Neofetch - Fixed Interix hardware detection when `%WINDIR%` is not `C:\Windows` ([#507](https://github.com/hykilpikonna/hyfetch/pull/507)).
 
 **🔧 Documentation & Maintenance**
 
