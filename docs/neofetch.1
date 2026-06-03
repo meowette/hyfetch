@@ -113,10 +113,15 @@ Unsupported on Windows
 \fB\-\-gpu_brand\fR on/off
 Enable/Disable GPU brand in output. (AMD/NVIDIA/Intel)
 .TP
+\fB\-\-gpu_backend\fR backend
+Which GPU backend to use. (lspci, glxinfo)
+.TP
 \fB\-\-gpu_type\fR type
 Which GPU to display. (all, dedicated, integrated)
 .IP
 NOTE: This only supports Linux.
+.IP
+NOTE: glxinfo only reports the GPU attached to the current display.
 .TP
 \fB\-\-de_version\fR on/off
 Show/Hide Desktop Environment version
