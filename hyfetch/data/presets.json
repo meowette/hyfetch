@@ -232,6 +232,10 @@
   "autism":["#C94A49", "#DE7554", "#DBB667", "#6FA35D", "#2E7574", "#232828"],
   "cenelian":["#FFE7B6", "#93554A", "#52203A", "#7E4A93", "#99AFD6"],
   "transneutral":["#74DFFF", "#FFFDB3", "#FFFC75", "#FFF200", "#FFFC75", "#FFFDB3", "#FE8CBF"],
+  "enbian": {
+    "colors": ["#261F4F", "#37296B", "#3C307C", "#5141A5", "#6551B5", "#8670D1", "#AB89DD"],
+    "comment": "Sourced from https://lgbtqia.wiki/wiki/Enbian"
+  },
   "paragender": {
     "colors": ["#9C9C9C", "#FFFFFF", "#BDE4D7", "#63BFA1", "#F3EE94", "#63BFA1", "#BDE4D7", "#FFFFFF", "#9C9C9C"],
     "weights": [4, 3, 3, 2, 1, 2, 3, 3, 4]

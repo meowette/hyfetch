@@ -923,8 +923,8 @@ image_source="auto"
 # Rosa, Sabayon, sabotage, Sailfish, SalentOS, Salient OS, Salix, Sasanqua, Scientific, secureblue,
 # semc, Septor, Serene, SharkLinux, ShastraOS, Siduction, SkiffOS, Slackel, Slackware, SliTaz,
 # SmartOS, Soda, Solus, Source Mage, Sparky, Star, SteamOS, Stock Linux, Sulin, SunOS, SwagArch, t2,
-# Tails, Tatra, TeArch, TorizonCore, Trisquel, Twister, Ubuntu, Ubuntu Budgie, Ubuntu Cinnamon,
-# Ubuntu Kylin, Ubuntu MATE, Ubuntu Studio, Ubuntu Sway, Ubuntu Touch, Ubuntu-GNOME, ubuntu_old02,
+# Tails, Tatra, TeArch, TorizonCore, Trisquel, Twister, Tuxedo OS, Ubuntu, Ubuntu Budgie,
+# Ubuntu Cinnamon, Ubuntu Kylin, Ubuntu MATE, Ubuntu Studio, Ubuntu Sway, Ubuntu Touch, Ubuntu-GNOME, ubuntu_old02,
 # Ultramarine Linux, unicodearch, Univalent, Univention, Uos, UrukOS, uwuntu, Vanilla, Venom, VNux,
 # Void, VzLinux, wii-linux-ngx, Windows, Windows 10, Windows 11, Windows95, Wrt, Xenia, Xenia2,
 # XFerience, Xray_OS, Xubuntu, yiffOS, Zirconium, Zorin have ascii logos.
@@ -7047,9 +7047,9 @@ ASCII:
                                 SharkLinux, ShastraOS, Siduction, SkiffOS, Slackel, Slackware,
                                 SliTaz, SmartOS, Soda, Solus, Source Mage, Sparky, Star, SteamOS,
                                 Stock Linux, Sulin, SunOS, SwagArch, t2, Tails, Tatra, TeArch,
-                                TorizonCore, Trisquel, Twister, Ubuntu, Ubuntu Budgie, Ubuntu
-                                Cinnamon, Ubuntu Kylin, Ubuntu MATE, Ubuntu Studio, Ubuntu Sway,
-                                Ubuntu Touch, Ubuntu-GNOME, ubuntu_old02, Ultramarine Linux,
+                                TorizonCore, Trisquel, Twister, Tuxedo OS, Ubuntu, Ubuntu Budgie,
+                                Ubuntu Cinnamon, Ubuntu Kylin, Ubuntu MATE, Ubuntu Studio, Ubuntu
+                                Sway, Ubuntu Touch, Ubuntu-GNOME, ubuntu_old02, Ultramarine Linux,
                                 unicodearch, Univalent, Univention, Uos, UrukOS, uwuntu, Vanilla,
                                 Venom, VNux, Void, VzLinux, wii-linux-ngx, Windows, Windows 10,
                                 Windows 11, Windows95, Wrt, Xenia, Xenia2, XFerience, Xray_OS,
@@ -15324,6 +15324,28 @@ ${c3}.................${c5},l;;XgggggXP:'${c4}...............
 ${c3}................${c5};lco;::::::'${c4}..................
 ${c3}..............${c5}.';ggggol'`${c4}.....................
 ${c3}.............${c5}':oo:''${c3}...${c4}.......................
+EOF
+        ;;
+
+        "TUXEDO OS"* | "Tuxedo OS"* | "tuxedo"*)
+            set_colors 7 1
+            read -rd '' ascii_data <<'EOF'
+${c1} #############################+
+.%#######################%@@@+
+            .           :#@%-
+           .#@%%%-     =@@#.
+             *@%@@=   +@@+
+              =@@%@+.#@%-
+               -@@%@@@#:
+                .#@%%@-
+                :#@@%@@=
+               =@@+=@@%@+
+             .#@@=  -@@%@#
+            -%@#:    :%@%@%:
+           *@@+       .#%%%%-
+         :%@%-              .
+        +@@@%#%%%%%%%%%%%%%%%%%%%%%%%.
+       +######################*******
 EOF
         ;;
 
