@@ -8,7 +8,7 @@ neofetch with pride flags <3
 
 This repo also serves as an updated version of the original `neofetch` since the upstream [dylanaraps/neofetch](https://github.com/dylanaraps/neofetch) isn't maintained anymore and has been archived. If you only want to use the updated neofetch without pride flags, you can use the `neofetch` script from this repo. To prevent command name conflict, I call it `neowofetch` :)
 
-* Method 1: `pip install -U hyfetch` then run `neowofetch`
+* Method 1: Install HyFetch from PyPI (`pip install -U hyfetch`, `pipx install hyfetch`, or `uv tool install hyfetch`) then run `neowofetch`
 * Method 2: `npx neowofetch`
 * Method 3: `P="$HOME/.local/bin/neowofetch" && curl -L nf.hydev.org -o "$P" && chmod +x "$P"`
 * Method 4: Run without install `bash <(curl -sL nf.hydev.org)`
@@ -16,13 +16,20 @@ This repo also serves as an updated version of the original `neofetch` since the
 
 ## Installation
 
-### Method 1: Install using pip (Recommended)
+### Method 1: Install from PyPI (Recommended)
 
 Even though hyfetch has been rewritten in Rust since 2.0.0, we also published PyPI packages with prebuilt rust binaries to allow seamless transition from the Python version. You can install the rust binaries using pip:
 
 ```sh
 pip install wheel
 pip install -U hyfetch
+```
+
+For isolated command installs, you can use pipx or uv:
+
+```sh
+pipx install hyfetch
+uv tool install hyfetch
 ```
 
 If a rust binary is not available for your platform (e.g. riscv64), it will automatically fall back to the v1.99.0 Python version.
@@ -93,7 +100,7 @@ A: Most likely, the `stdout` detection is set to auto and is removing the ascii 
 
 #### Q: How can I run HyFetch on Windows?
 
-A: Install Python > 3.7 and Git > 2.42.0 first. Then, either open Git Bash terminal or install a terminal emulator that can display RGB colors (the default Windows cmd.exe cannot, but the new [Windows Terminal](https://apps.microsoft.com/detail/9N0DX20HK701?hl=en-US&gl=US) can). Then, run `pip install hyfetch` and run `hyfetch`.
+A: Install Python > 3.7 and Git > 2.42.0 first. Then, either open Git Bash terminal or install a terminal emulator that can display RGB colors (the default Windows cmd.exe cannot, but the new [Windows Terminal](https://apps.microsoft.com/detail/9N0DX20HK701?hl=en-US&gl=US) can). Then, run `pip install hyfetch`, `pipx install hyfetch`, or `uv tool install hyfetch` and run `hyfetch`.
 
 
 ## Contributing
@@ -104,7 +111,21 @@ After making changes to the source code, you can run `python -m hyfetch` in the 
 
 If they work correctly, you can commit and push these changes using git command or Github Desktop. Then, you can create a pull request on Github so that it can go into our next release!
 
-You can also install your version locally by running `pip install .` in the repo root.
+You can also install your version locally by running one of these commands in the repo root:
+
+```sh
+pip install .
+pipx install .
+uv tool install .
+```
+
+Or install directly from the GitHub source:
+
+```sh
+pip install git+https://github.com/hykilpikonna/hyfetch.git@master
+pipx install git+https://github.com/hykilpikonna/hyfetch.git@master
+uv tool install git+https://github.com/hykilpikonna/hyfetch.git@master
+```
 
 
 ## Change Log
