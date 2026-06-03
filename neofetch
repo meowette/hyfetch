@@ -3193,9 +3193,30 @@ get_cpu() {
                 ;;
 
                 "arm"* | "aarch64")
-                    if [[ $(trim "$distro") == Android* ]]; then
-                        # Older Android ROMs show the CPU model as a string in cpuinfo.
+                    if [[ $(trim "$distro") == Android* ]] || [[ -d /system/app && -d /system/priv-app ]]; then
+                        # Android and Termux PRoot sessions can expose a useful SoC name here.
                         cpu="$(awk -F':' '/Hardware/ {print $2; exit}' "$cpu_file")"
+
+                        if [[ -z "$cpu" ]]; then
+                            getprop_cmd=
+
+                            if command -v getprop &> /dev/null; then
+                                getprop_cmd="$(command -v getprop)"
+                            elif [[ -x /system/bin/getprop ]]; then
+                                getprop_cmd="/system/bin/getprop"
+                            fi
+
+                            if [[ "$getprop_cmd" ]]; then
+                                cpu="$("$getprop_cmd" ro.soc.model 2>/dev/null)"
+                                [[ -z "$cpu" ]] && cpu="$("$getprop_cmd" ro.product.oplus.cpuinfo 2>/dev/null)"
+
+                                case ${cpu,,} in
+                                    "sm8350") cpu="Qualcomm Snapdragon 888" ;;
+                                    "sm8350-ac") cpu="Qualcomm Snapdragon 888+" ;;
+                                    sm*) cpu="Qualcomm ${cpu^^}" ;;
+                                esac
+                            fi
+                        fi
                     fi
 
                     if [[ -z "$cpu" ]] && command -v lscpu &> /dev/null; then
