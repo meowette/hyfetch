@@ -4564,7 +4564,21 @@ get_resolution() {
                 resolution="$(xdpyinfo | awk '/dimensions:/ {printf $2}')"
 
             elif [[ -d /sys/class/drm ]]; then
+                local connector status enabled single_resolution
+
                 for dev in /sys/class/drm/*/modes; do
+                    [[ -e $dev ]] || continue
+
+                    connector=${dev%/modes}
+                    status=
+                    enabled=
+                    single_resolution=
+
+                    [[ -r "$connector/status" ]]  && read -r status _  < "$connector/status"
+                    [[ -r "$connector/enabled" ]] && read -r enabled _ < "$connector/enabled"
+
+                    [[ $status == "disconnected" || $enabled == "disabled" ]] && continue
+
                     read -r single_resolution _ < "$dev"
 
                     [[ $single_resolution ]] && resolution="${single_resolution}, ${resolution}"
