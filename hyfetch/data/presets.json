@@ -277,5 +277,8 @@
   "queervillain": {
     "colors": ["#662D91", "#8DC63F", "#F7941D", "#EC008C"],
     "comment": "Sourced from https://distressedegg.fun/qvp"
+  },
+  "barlo": {
+    "colors": ["#A1399C", "#327FDB", "#6AC343"]
   }
 }
