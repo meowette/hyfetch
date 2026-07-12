@@ -280,5 +280,8 @@
   },
   "barlo": {
     "colors": ["#A1399C", "#327FDB", "#6AC343"]
+  },
+  "unlabeled": {
+    "colors": ["#E7F9E4", "#FFFFFF", "#DEF0F7", "#FAE2C3"]
   }
 }
