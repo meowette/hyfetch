@@ -259,6 +259,7 @@
   "cupiorose":["#A0A0A0", "#C7BFE8", "#FFFFFF", "#B6C1DC"],
   "cupioromantic":["#FCAAA4", "#FDC6C1", "#FFFFFF", "#C9C0E7", "#A1A1A1"],
   "cupiosexual":["#A0A0A0", "#C7BFE8", "#FFFFFF", "#FFB3DA"],
+  "cow":["#4FB7AC", "#FFFFFF", "#F6C0D0", "#EC758B", "#BC196A", "#520B45"],
 
   "beiyang": ["#DF1B12", "#FFC600", "#01639D", "#FFFFFF", "#000000"],
   "burger": ["#F3A26A", "#498701", "#FD1C13", "#7D3829", "#F3A26A"],
@@ -280,6 +281,10 @@
   },
   "barlo": {
     "colors": ["#A1399C", "#327FDB", "#6AC343"]
+  },
+  "disability": {
+    "colors": ["#595959", "#CE717F", "#EFDD77", "#E8E8E8", "#7AC3E0", "#3CB07D","#595959"],
+    "comment": "Colorpicked from https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Visually_Safe_Disability_Pride_Flag.svg/1280px-Visually_Safe_Disability_Pride_Flag.svg.png"
   },
   "unlabeled": {
     "colors": ["#E7F9E4", "#FFFFFF", "#DEF0F7", "#FAE2C3"]
